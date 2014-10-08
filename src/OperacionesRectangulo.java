@@ -4,11 +4,12 @@ public class OperacionesRectangulo {
 
 public static void main (String args[]){
 
-double altura;
-double base;
+
+double altura = 0;
+double base = 0;
 double superficie;
-// inicio del constructor
-	Rectangulo operaciones = new Rectangulo(base, altura);
+
+	Rectangulo operaciones = new Rectangulo(altura, base);
  
 	superficie = operaciones.Superficie();
 
@@ -24,7 +25,7 @@ double superficie;
 	operaciones.setAltura(altura);
 
 	System.out.print("\nla base es: " + operaciones.Superficie());
-	System.out.print("\nel perimetro es: " +operaciones.Perimetro());
+	System.out.print("\nel perimetro es: " + operaciones.Perimetro());
 	
 	}
 }

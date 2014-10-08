@@ -1,48 +1,46 @@
 public class Rectangulo{
 
-private double base;
-private double altura;
-private double perimetro;
-private double superficie;
+private double vbase;
+private double valtura;
+private double vperimetro;
+private double vsuperficie;
 
-//comienza el constructor //
 
-public Rectangulo (double valorAltura,double valorBase);
+public Rectangulo (double valoralto ,double valorlargo)
 {
-this.valorAltura = altura;
-this.valorBase = base;
+	this.vbase = valorlargo;
+	this.valtura = valoralto;
 }
-
 public void setBase (double base)
 {
-this.valorBase = base;
+	this.vbase = base;
 }
 public void setAltura (double altura)
 {
-this.valorAltura = altura;
+	this.valtura = altura;
 }
 
 
-public double getBase();
+public double getBase()
 {
-return valorBase;
+	return vbase;
 }
 
-public double getAltura();
+public double getAltura()
 {
-return valorAltura;
+	return valtura;
 }
 
 public double Superficie ()
 {
-superficie = valorBase * valorAltura;
-return superficie;
+	vsuperficie = vbase * valtura;
+	return vsuperficie;
 }
 
 public double Perimetro ()
 {
-perimetro = (2*base) + (2*altura);
-return perimetro; 
+	vperimetro = (2*vbase) + (2*valtura);
+	return vperimetro; 
 	}
 }
 
