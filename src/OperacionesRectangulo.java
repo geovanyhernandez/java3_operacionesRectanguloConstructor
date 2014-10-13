@@ -20,11 +20,10 @@ double superficie;
 
 	System.out.print("\ningresa la base del rectangulo : ");
         base = sc.nextDouble();
-
-	operaciones.setBase(base);
-	operaciones.setAltura(altura);
-
-	System.out.print("\nla base es: " + operaciones.Superficie());
+	
+	Rectangulo operaciones = new Rectangulo(altura, base);
+        
+        System.out.print("\nla base es: " + operaciones.Superficie());
 	System.out.print("\nel perimetro es: " + operaciones.Perimetro());
 	
 	}
